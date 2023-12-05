@@ -1,5 +1,7 @@
 <?php
-define( 'API_URL', 'https://packages.wenmarkdigital.com/plugins/sellers-json/packages/' );
+$currentURL = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]";
+
+define( 'API_URL', $currentURL . '/packages/' );
 
 $pluginDirectory = '../packages/';
 $pattern = '/sellers-json_(\d+\.\d+\.\d+)\.zip$/';
