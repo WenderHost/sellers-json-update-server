@@ -1,5 +1,5 @@
 <?php
-define( 'API_URL', 'https://packages.wenmarkdigital.com/sellers-json/packages/' );
+define( 'API_URL', 'https://packages.wenmarkdigital.com/plugins/sellers-json/packages/' );
 
 $pluginDirectory = '../packages/';
 $pattern = '/sellers-json_(\d+\.\d+\.\d+)\.zip$/';
